@@ -122,6 +122,11 @@
   background: #FFFBEF;
 }
 
+.rating .item.active {
+  border: 0.5px solid #FFA037;
+  background: #FFFBEF;
+}
+
 .textarea-title {
   font-family: PT Sans;
   font-weight: 400;
