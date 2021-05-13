@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&family=Roboto+Slab:wght@500&family=Rubik&display=swap');
+
+.rating-modal {
+  width: 426px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  position: relative;
+}
+
+.rating-modal_background.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.rating-modal_background {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rating-modal_title-img {
+  height: 184px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  background: url(../../images/modal-img.png) no-repeat, linear-gradient(225deg, #FFECD2 0%, #FCB69F 100%);
+  background-position: center;
+}
+
+.rating-modal_close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 16px;
+  height: 18px;
+  opacity: 0.5;
+}
+.rating-modal_close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.rating-modal_close:before, .rating-modal_close:after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 18px;
+  width: 2px;
+  background-color: #999999;
+}
+.rating-modal_close:before {
+  transform: rotate(45deg);
+}
+.rating-modal_close:after {
+  transform: rotate(-45deg);
+}
+
+.rating-modal_title {
+  font-family: Roboto Slab;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.rating-modal .container {
+  padding: 0 24px 0 24px;
+}
+
+.rating-modal_text {
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Roboto;
+  color: #565656;
+  margin-top: 12px;
+}
+
+.rating-modal_confirm-btn {
+  background: #FFA037;
+  color: #FFFFFF;
+  font-family: PT Sans;
+  font-weight: 700;
+  padding: 12px 24px;
+  margin-top: 24px;
+  border-radius: 4px;
+  display: inline-flex;
+}
+
+.rating-modal_confirm-btn:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.rating {
+  margin-top: 24px;
+  display: flex;
+}
+
+.rating .item {
+  font-family: Rubik;
+  font-weight: 400;
+  border: 1px solid #C9C9C9;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  font-size: 18px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.rating .item:hover {
+  cursor: pointer;
+  border: 0.5px solid #FFA037;
+  background: #FFFBEF;
+}
+
+.textarea-title {
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 6px 0;
+  color: #565656;
+}
+
+.rating-textarea {
+  width: 100%;
+  height: 140px;
+  border-radius: 2px;
+  resize: none;
+  color: #999999;
+  font-family: PT Sans;
+  font-weight: 400;
+  border: 1px solid #E2E2E2;
+  outline: none;
+  display: block;
+  max-width: 334px;
+  padding: 8px 10px 8px 12px;
+}
